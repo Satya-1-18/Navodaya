@@ -1,0 +1,351 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --common-font: var('Poppins', sans-serif; )
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Poppins, Arial, sans-serif;
+}
+
+.navbar {
+    margin: 0%;
+    background-image: url(garden.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 90vh;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 1.5vh;
+}
+
+.nav {
+    display: flex;
+    font-family: 'Poppins', sans-serif;
+    padding: 14px 56px;
+    text-decoration: none;
+    color: white;
+    background: none;
+    font-size: 26px;
+    font-weight: 500;
+
+
+}
+
+.nav:hover {
+    color: #93cdf3;
+    transition: all .2s ease-in-out;
+}
+
+.navbar-logo img {
+    display: inline-block;
+    vertical-align: middle;
+    height: 29vh;
+
+}
+
+.title {
+    display: grid;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+
+    .name {
+        padding-top: 12vh;
+        color: aliceblue;
+        font-size: 74px;
+        font-weight: 700;
+        font-family: 'Poppins', sans-serif;
+        line-height: 0.65cm;
+        text-transform: uppercase;
+    }
+
+    .place {
+        display: inline;
+        text-align: center;
+        color: aliceblue;
+        line-height: 1.8;
+        padding-bottom: 2vh;
+        font-size: 59px;
+        font-weight: 700;
+        text-transform: uppercase;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .des {
+        color: #fff;
+        text-align: center;
+        line-height: 1.8;
+        font-size: 30px;
+        font-weight: 500;
+
+    }
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4vh;
+
+    .button {
+        text-transform: uppercase;
+        color: #f0f0f0;
+        background: 0 0;
+        border: 3px solid #164360;
+        font-size: 18px;
+        padding: 21px 36px;
+        border-radius: 10px;
+        vertical-align: middle;
+        text-decoration: none;
+        font-weight: 600;
+    }
+
+    .button:hover {
+        color: #fff;
+        background-color: #164360;
+        transition: all .2s ease-in-out;
+    }
+}
+
+.second-slide {
+    padding-top: 9vh;
+
+    .wel {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 57px;
+        font-weight: 700;
+        color: #2d2d2d;
+        font-family: poppins;
+        text-transform: uppercase;
+    }
+
+    .dec {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 17px;
+        margin: 20px 0;
+        font-weight: 700;
+        color: #2d2d2d;
+        font-family: poppins;
+        text-transform: uppercase;
+        line-height: 1.8;
+    }
+
+    .sign {
+        display: inline-flex;
+        height: 10vh;
+        width: 20vh;
+        justify-content: center;
+        align-items: center;
+        padding: 8vh 1vh;
+        background-color: #164360;
+        visibility: hidden;
+    }
+}
+
+.nvs-facility {
+    padding: 97px 0;
+    background-color: #f2f2f2;
+
+    .vibrant h2 {
+        display: flex;
+        font-weight: 700;
+        justify-content: center;
+        font-size: 65px;
+        margin-bottom: 28px;
+        line-height: 1.1;
+    }
+
+    .all-cards {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .classcard,
+    .sportcard,
+    .hostelcard,
+    .labcard,
+    .libcard {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 50px;
+        font-family: sans-serif;
+    }
+
+    .card-classroom,
+    .card-sport,
+    .card-hostel,
+    .card-lab,
+    .card-lib {
+        width: 24rem;
+        height: 36rem;
+        border-radius: 10px;
+        overflow: hidden;
+        cursor: pointer;
+        position: relative;
+        color: rgb(0, 0, 0);
+        box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
+
+        .classroom-img,
+        .sport-img,
+        .hostel-img,
+        .lab-img,
+        .lib-img {
+            position: absolute;
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            opacity: 0.9;
+            transition: opacity .2s ease-out;
+        }
+
+
+
+        .class-title,
+        .hostel,
+        .sport,
+        .lab,
+        .lib {
+            position: absolute;
+            inset: auto auto 30px 30px;
+            margin: 0;
+            transition: inset .3s .3s ease-out;
+            font-family: popppins, sans-serif;
+            font-weight: 540;
+            text-transform: uppercase;
+
+        }
+
+        .class-des,
+        .class-button,
+        .sport-des,
+        .sport-button,
+        .hostel-des,
+        .hostel-button,
+        .lab-des,
+        .lab-button,
+        .lib-des,
+        .lib-button {
+            position: absolute;
+            font-weight: 500;
+            opacity: 0;
+            max-width: 80%;
+            transition: opacity .3s ease-out;
+        }
+
+        .class-des,
+        .sport-des,
+        .hostel-des,
+        .lab-des,
+        .lib-des {
+            inset: auto auto 80px 30px;
+        }
+
+        .class-button,
+        .sport-button,
+        .hostel-button,
+        .lab-button,
+        .lib-button {
+            inset: auto auto 40px 30px;
+            color: inherit;
+            text-decoration: none;
+        }
+
+        &:hover .class-title,
+        &:hover .sport,
+        &:hover .hostel,
+        &:hover .lab,
+        &:hover .lib {
+            inset: auto auto 220px 30px;
+            transition: inset .3s ease-out;
+        }
+
+        &:hover .lib-des,
+        &:hover .lib-button,
+        &:hover .sport-des,
+        &:hover .sport-button,
+        &:hover .hostel-des,
+        &:hover .hostel-button,
+        &:hover .lab-des,
+        &:hover .lab-button,
+        &:hover .class-des,
+        &:hover .class-button {
+            opacity: 1;
+            transition: opacity .5s .1s ease-in;
+        }
+
+        &:hover img {
+            transition: opacity .3s ease-in;
+            opacity: 0.3;
+        }
+
+    }
+
+    .material-symbols-outlined {
+        vertical-align: middle;
+    }
+
+    .vibrant-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .other-btn {
+            display: flex;
+            text-transform: uppercase;
+            color: #060303;
+            background: 0 0;
+            border: 3px solid #164360;
+            font-size: 18px;
+            padding: 21px 36px;
+            border-radius: 10px;
+            vertical-align: middle;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .other-btn:hover {
+            color: #fff;
+            background-color: #164360;
+            transition: all .2s ease-in-out;
+        }
+    }
+}
+
+.events {
+    padding: 97px 0;
+
+    .container {
+        width: 1140px;
+        max-width: 100%;
+    }
+
+    .upcoming {
+        font-weight: 600;
+        margin: 0 0 28px;
+        font-size: 35px;
+    }
+}
